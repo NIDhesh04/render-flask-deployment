@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 app = Flask(__name__ , template_folder="templates" , static_folder="static")
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-# postgresql://flask_task_manager_user:h6ScviTlnT8IVwOTu9wVilRhCmSUHaHa@dpg-cv00pvtumphs73cfbusg-a.oregon-postgres.render.com/flask_task_manager
+# postgresql://flask_task_manager2_user:mazDDV3hlDN99YBb1EkrVzwqbx8yp3lE@dpg-cv02guin91rc73fjjs60-a.oregon-postgres.render.com/flask_task_manager2
 db = SQLAlchemy(app)
 
 class Task(db.Model):
